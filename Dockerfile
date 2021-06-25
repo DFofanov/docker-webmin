@@ -31,7 +31,7 @@ RUN echo root:password | chpasswd && \
     apt-get clean
 
 EXPOSE 8000
-ENV LC_ALL ru_RU.UTF-8
+ENV LC_ALL C.UTF-8
 
 WORKDIR /home
 RUN echo "#! /bin/bash" > entrypoint.sh && \
